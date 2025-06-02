@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Accessory" load_steps=3 format=3 uid="uid://dhokbvwe7t17o"]
+
+[ext_resource type="Texture2D" uid="uid://d3b83125huyb5" path="res://Equipments/Sprites/Necklace.tres" id="1_5r41r"]
+[ext_resource type="Script" uid="uid://djux428u1kllo" path="res://Equipments/Scripts/Accessory.gd" id="2_w26f6"]
+
+[resource]
+script = ExtResource("2_w26f6")
+critical_chance = 7.5
+cooldown_rate = -12.0
+title = "Necklace"
+item_type = "Accessory"
+icon = ExtResource("1_5r41r")
+description = "Magical necklace. Complementary to Bloody Ring."
+enhancement_rate = 0
+metadata/_custom_type_script = "uid://djux428u1kllo"

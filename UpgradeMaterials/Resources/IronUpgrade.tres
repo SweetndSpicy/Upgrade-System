@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeMaterial" load_steps=3 format=3 uid="uid://pkyryxgpyf56"]
+
+[ext_resource type="Texture2D" uid="uid://c3ygupopjrr5n" path="res://UpgradeMaterials/Sprites/Iron.tres" id="1_ricrn"]
+[ext_resource type="Script" uid="uid://klljpkheuqk6" path="res://UpgradeMaterials/Scripts/UpgradeMaterial.gd" id="2_40jwe"]
+
+[resource]
+script = ExtResource("2_40jwe")
+title = "Iron"
+icon = ExtResource("1_ricrn")
+description = "Good quality material. Less likely to break when enhance."
+upgrade_power = 9
+metadata/_custom_type_script = "uid://klljpkheuqk6"

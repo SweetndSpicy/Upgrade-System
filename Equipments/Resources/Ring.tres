@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Accessory" load_steps=3 format=3 uid="uid://bld0btrlyeqc3"]
+
+[ext_resource type="Texture2D" uid="uid://c3702gl4l78e2" path="res://Equipments/Sprites/Ring.tres" id="1_c3ohs"]
+[ext_resource type="Script" uid="uid://djux428u1kllo" path="res://Equipments/Scripts/Accessory.gd" id="2_k7f1n"]
+
+[resource]
+script = ExtResource("2_k7f1n")
+critical_chance = 5.0
+cooldown_rate = -10.0
+title = "Bloody Ring"
+item_type = "Accessory"
+icon = ExtResource("1_c3ohs")
+description = "Quite fancy. Helps you deal double damage."
+enhancement_rate = 0
+metadata/_custom_type_script = "uid://djux428u1kllo"

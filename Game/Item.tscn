@@ -1,0 +1,35 @@
+[gd_scene load_steps=16 format=3 uid="uid://kufkbxrkpj5s"]
+
+[ext_resource type="Script" uid="uid://bsehyl7mq60pv" path="res://Game/item.gd" id="1_yc83t"]
+[ext_resource type="Script" uid="uid://klljpkheuqk6" path="res://UpgradeMaterials/Scripts/UpgradeMaterial.gd" id="2_4rue7"]
+[ext_resource type="Resource" uid="uid://ct3l70jwmoyp7" path="res://UpgradeMaterials/Resources/StoneUpgrade.tres" id="3_jbj05"]
+[ext_resource type="Resource" uid="uid://drum7pxbwmr8w" path="res://UpgradeMaterials/Resources/CoalUpgrade.tres" id="4_yohsu"]
+[ext_resource type="Resource" uid="uid://pkyryxgpyf56" path="res://UpgradeMaterials/Resources/IronUpgrade.tres" id="5_krpwb"]
+[ext_resource type="Resource" uid="uid://cc23ux06mlbgf" path="res://UpgradeMaterials/Resources/GoldUpgrade.tres" id="6_frcxx"]
+[ext_resource type="Resource" uid="uid://nc3v5u6c5j81" path="res://UpgradeMaterials/Resources/PlatinumUpgrade.tres" id="7_u6kik"]
+[ext_resource type="Script" uid="uid://ihibe3qc46ak" path="res://Equipments/Scripts/Equipment.gd" id="8_3c5sv"]
+[ext_resource type="Resource" uid="uid://dbyk26jo3l786" path="res://Equipments/Resources/Shield.tres" id="9_40nda"]
+[ext_resource type="Resource" uid="uid://ct2dbgoqs4rqi" path="res://Equipments/Resources/Breastplate.tres" id="10_chgb1"]
+[ext_resource type="Resource" uid="uid://dhokbvwe7t17o" path="res://Equipments/Resources/Necklace.tres" id="11_qd3n2"]
+[ext_resource type="Resource" uid="uid://bld0btrlyeqc3" path="res://Equipments/Resources/Ring.tres" id="12_riphh"]
+[ext_resource type="Resource" uid="uid://p5q6s5los0bh" path="res://Equipments/Resources/Sword.tres" id="13_limhr"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_lfn73"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ls1l"]
+size = Vector2(76, 64)
+
+[node name="Item" type="Area2D"]
+script = ExtResource("1_yc83t")
+materials = Array[ExtResource("2_4rue7")]([ExtResource("3_jbj05"), ExtResource("4_yohsu"), ExtResource("5_krpwb"), ExtResource("6_frcxx"), ExtResource("7_u6kik")])
+equipments = Array[ExtResource("8_3c5sv")]([ExtResource("9_40nda"), ExtResource("10_chgb1"), ExtResource("11_qd3n2"), ExtResource("12_riphh"), ExtResource("13_limhr")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(29.75, 23.75)
+scale = Vector2(60.5, 48.5)
+texture = SubResource("PlaceholderTexture2D_lfn73")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, 22)
+shape = SubResource("RectangleShape2D_0ls1l")

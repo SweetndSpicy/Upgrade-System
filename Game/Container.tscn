@@ -1,0 +1,133 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpvidhgfs6ocw"]
+
+[ext_resource type="Script" uid="uid://cio3irxa24nqf" path="res://Game/ItemSlot.gd" id="1_7td4u"]
+[ext_resource type="Resource" uid="uid://ct2dbgoqs4rqi" path="res://Equipments/Resources/Breastplate.tres" id="2_ix87b"]
+[ext_resource type="Script" uid="uid://biuomymutwk7b" path="res://Game/PanelContainer.gd" id="3_3q2fd"]
+
+[node name="Container" type="PanelContainer"]
+self_modulate = Color(1, 1, 1, 0.4)
+custom_minimum_size = Vector2(50, 50)
+
+[node name="ItemSlot" type="TextureRect" parent="." groups=["item_slots"]]
+unique_name_in_owner = true
+z_index = 5
+layout_mode = 2
+expand_mode = 1
+script = ExtResource("1_7td4u")
+item_data = ExtResource("2_ix87b")
+
+[node name="Panel" type="Panel" parent="ItemSlot"]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0.4)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.91
+anchor_right = -1.91
+offset_left = -227.6
+offset_top = -120.0
+offset_right = 20.4
+offset_bottom = 224.0
+script = ExtResource("3_3q2fd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ItemSlot/Panel"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 248.0
+offset_bottom = 242.0
+alignment = 1
+
+[node name="Health" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+text = "www"
+
+[node name="Defense" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+text = "www"
+
+[node name="BlockChance" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+text = "www"
+
+[node name="AttackPower" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+text = "www"
+
+[node name="CriticalChance" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+bbcode_enabled = true
+text = "www"
+
+[node name="CooldownRate" type="RichTextLabel" parent="ItemSlot/Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 13
+text = "www"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ItemSlot/Panel"]
+custom_minimum_size = Vector2(175, 0)
+layout_mode = 2
+offset_left = 56.0
+offset_right = 231.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Title" type="Label" parent="ItemSlot/Panel/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "123455666"
+
+[node name="EnhancementRate" type="RichTextLabel" parent="ItemSlot/Panel/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "44444444"
+
+[node name="ItemType" type="RichTextLabel" parent="ItemSlot/Panel"]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 88.0
+offset_top = 32.0
+offset_right = 176.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+text = "www"
+fit_content = true
+
+[node name="Description" type="RichTextLabel" parent="ItemSlot/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.516
+anchor_top = 1.0
+anchor_right = 0.516
+anchor_bottom = 1.0
+offset_left = -103.968
+offset_top = -88.0
+offset_right = 104.032
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 15
+text = "asfasfasfasf"

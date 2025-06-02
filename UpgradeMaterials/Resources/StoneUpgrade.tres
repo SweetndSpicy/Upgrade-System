@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeMaterial" load_steps=3 format=3 uid="uid://ct3l70jwmoyp7"]
+
+[ext_resource type="Texture2D" uid="uid://uouxeuac2np1" path="res://UpgradeMaterials/Sprites/stone.tres" id="1_tfi3m"]
+[ext_resource type="Script" uid="uid://klljpkheuqk6" path="res://UpgradeMaterials/Scripts/UpgradeMaterial.gd" id="2_svu6o"]
+
+[resource]
+script = ExtResource("2_svu6o")
+title = "Stone"
+icon = ExtResource("1_tfi3m")
+description = "Basic stone"
+upgrade_power = 3
+metadata/_custom_type_script = "uid://klljpkheuqk6"

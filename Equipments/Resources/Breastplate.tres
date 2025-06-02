@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Armor" load_steps=3 format=3 uid="uid://ct2dbgoqs4rqi"]
+
+[ext_resource type="Texture2D" uid="uid://fw0txe8u8bmw" path="res://Equipments/Sprites/Breastplate.tres" id="1_f80no"]
+[ext_resource type="Script" uid="uid://bf58v5ddenvbv" path="res://Equipments/Scripts/Armor.gd" id="2_x68v0"]
+
+[resource]
+script = ExtResource("2_x68v0")
+defense = 15
+block_chance = 3.0
+health = 75
+title = "Breastplate"
+item_type = "Armor"
+icon = ExtResource("1_f80no")
+description = "Hard to break. Gives you confidence as well as defense."
+enhancement_rate = 0
+metadata/_custom_type_script = "uid://bf58v5ddenvbv"

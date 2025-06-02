@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeMaterial" load_steps=3 format=3 uid="uid://nc3v5u6c5j81"]
+
+[ext_resource type="Texture2D" uid="uid://cqdeqcee37e1y" path="res://UpgradeMaterials/Sprites/platinum.tres" id="1_vp6g6"]
+[ext_resource type="Script" uid="uid://klljpkheuqk6" path="res://UpgradeMaterials/Scripts/UpgradeMaterial.gd" id="2_unv1r"]
+
+[resource]
+script = ExtResource("2_unv1r")
+title = "Platinum"
+icon = ExtResource("1_vp6g6")
+description = "Most rare material. Only for best quality items."
+upgrade_power = 15
+metadata/_custom_type_script = "uid://klljpkheuqk6"
