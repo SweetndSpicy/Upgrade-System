@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://p5q6s5los0bh"]
+
+[ext_resource type="Texture2D" uid="uid://c47yc88okyv78" path="res://Equipments/Sprites/Sword.tres" id="1_v6qkh"]
+[ext_resource type="Script" uid="uid://birpi18ptg6i4" path="res://Equipments/Scripts/Weapon.gd" id="2_cylvf"]
+
+[resource]
+script = ExtResource("2_cylvf")
+attack_power = 25
+critical_chance = 7.5
+title = "Sword"
+item_type = "Weapon"
+icon = ExtResource("1_v6qkh")
+description = "Fancy sword. Does the job."
+enhancement_rate = 0
+metadata/_custom_type_script = "uid://birpi18ptg6i4"
